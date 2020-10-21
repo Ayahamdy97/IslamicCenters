@@ -46,11 +46,11 @@ extension HomeVC :UITableViewDelegate, UITableViewDataSource{
         case 1:
             return 125
         case 2:
-            return 280
+            return 300
         case 3:
-            return 280
+            return 300
         case 4:
-        return 280
+        return 300
         default:
             return 0
         }
