@@ -1,30 +1,14 @@
 //
-//  HomeTWoVC.swift
+//  HomeVC+TableViewDelegate.swift
 //  Islamic
 //
-//  Created by Aya on 10/19/20.
+//  Created by Aya on 10/21/20.
 //  Copyright © 2020 Aya. All rights reserved.
 //
 
 import UIKit
 
-class HomeTWoVC: UIViewController {
-
-    @IBOutlet weak var homeTableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        homeTableView.delegate   = self
-        homeTableView.dataSource = self
-    }
-    
-
-    
-
-}
-
-
-extension HomeTWoVC :UITableViewDelegate, UITableViewDataSource{
+extension HomeVC :UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         5
     }
