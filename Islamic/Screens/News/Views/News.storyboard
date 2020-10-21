@@ -3,53 +3,130 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--NewsVC-->
-        <scene sceneID="7yL-U7-aGx">
+        <scene sceneID="tcG-hF-rKU">
             <objects>
-                <viewController storyboardIdentifier="NewsVC" id="k72-e8-RAb" customClass="NewsVC" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9zW-zt-nrW">
+                <viewController storyboardIdentifier="NewsVC" id="30s-tB-Lj3" customClass="NewsVC" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBq-z5-Zk7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1UA-jb-S2d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath - Copy" id="ePD-EG-Xjh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="562" id="apC-8G-zMZ">
-                                        <rect key="frame" x="0.0" y="208" width="414" height="562"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="apC-8G-zMZ" id="SWv-ef-KVo">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="562"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a8-qJ-La8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-FJ-lEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islam Religion is the truth" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-oQ-ci4">
+                                                <rect key="frame" x="20" y="276" width="374" height="21"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday, 28 Sep 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ida-QE-FVE">
+                                                <rect key="frame" x="20" y="250" width="374" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="huj-dy-bd6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" name="Green"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdy-8D-tn4">
+                                                <rect key="frame" x="20" y="312" width="374" height="62.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" name="Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojg-tn-cpQ">
+                                                <rect key="frame" x="20" y="389.5" width="374" height="269.5"/>
+                                                <mutableString key="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary. making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</mutableString>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" name="Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath - Copy" translatesAutoresizingMaskIntoConstraints="NO" id="lVd-jg-aGD">
+                                                <rect key="frame" x="0.0" y="35" width="414" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="u8i-f8-5Td"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ojg-tn-cpQ" secondAttribute="trailing" constant="20" id="3n5-a5-qcp"/>
+                                            <constraint firstItem="Vdy-8D-tn4" firstAttribute="top" secondItem="Fmr-oQ-ci4" secondAttribute="bottom" constant="15" id="41f-3P-9nm"/>
+                                            <constraint firstItem="Ida-QE-FVE" firstAttribute="leading" secondItem="V7h-FJ-lEu" secondAttribute="leading" constant="20" id="7w4-wA-VQN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ida-QE-FVE" secondAttribute="trailing" constant="20" id="FgO-Qg-fRv"/>
+                                            <constraint firstItem="Fmr-oQ-ci4" firstAttribute="top" secondItem="Ida-QE-FVE" secondAttribute="bottom" constant="5" id="TGP-Nf-8vG"/>
+                                            <constraint firstItem="Ojg-tn-cpQ" firstAttribute="top" secondItem="Vdy-8D-tn4" secondAttribute="bottom" constant="15" id="TPG-Cd-LUF"/>
+                                            <constraint firstItem="lVd-jg-aGD" firstAttribute="top" secondItem="V7h-FJ-lEu" secondAttribute="top" constant="35" id="U7s-e7-Exk"/>
+                                            <constraint firstItem="Vdy-8D-tn4" firstAttribute="leading" secondItem="V7h-FJ-lEu" secondAttribute="leading" constant="20" id="VYL-hc-Ti5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fmr-oQ-ci4" secondAttribute="trailing" constant="20" id="dPs-wJ-wso"/>
+                                            <constraint firstItem="Fmr-oQ-ci4" firstAttribute="leading" secondItem="V7h-FJ-lEu" secondAttribute="leading" constant="20" id="hcK-tY-jk1"/>
+                                            <constraint firstItem="Ida-QE-FVE" firstAttribute="top" secondItem="lVd-jg-aGD" secondAttribute="bottom" constant="15" id="m3q-Pf-klw"/>
+                                            <constraint firstItem="Ojg-tn-cpQ" firstAttribute="leading" secondItem="V7h-FJ-lEu" secondAttribute="leading" constant="20" id="n29-lE-uir"/>
+                                            <constraint firstItem="lVd-jg-aGD" firstAttribute="leading" secondItem="V7h-FJ-lEu" secondAttribute="leading" id="nv7-PM-gdT"/>
+                                            <constraint firstAttribute="trailing" secondItem="lVd-jg-aGD" secondAttribute="trailing" id="uS3-zJ-15Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vdy-8D-tn4" secondAttribute="trailing" constant="20" id="uzB-wa-gvc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="V7h-FJ-lEu" firstAttribute="bottom" secondItem="Lpf-i5-J9w" secondAttribute="bottom" id="4l6-nv-ROM"/>
+                                    <constraint firstItem="V7h-FJ-lEu" firstAttribute="leading" secondItem="5a8-qJ-La8" secondAttribute="leading" id="Br6-9i-aBz"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7h-FJ-lEu" secondAttribute="trailing" id="JH2-qo-ZGL"/>
+                                    <constraint firstItem="V7h-FJ-lEu" firstAttribute="centerX" secondItem="5a8-qJ-La8" secondAttribute="centerX" id="cQN-np-keF"/>
+                                    <constraint firstAttribute="bottom" secondItem="V7h-FJ-lEu" secondAttribute="bottom" id="gIl-UO-y2W"/>
+                                    <constraint firstItem="V7h-FJ-lEu" firstAttribute="top" secondItem="5a8-qJ-La8" secondAttribute="top" id="jCD-IF-NZb"/>
+                                    <constraint firstItem="V7h-FJ-lEu" firstAttribute="centerY" secondItem="5a8-qJ-La8" secondAttribute="centerY" id="rOT-fb-Skc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="qnf-fr-G9J"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Lpf-i5-J9w"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1UA-jb-S2d" firstAttribute="bottom" secondItem="VzC-XV-FFt" secondAttribute="bottom" id="2jB-PF-K7t"/>
-                            <constraint firstItem="1UA-jb-S2d" firstAttribute="trailing" secondItem="VzC-XV-FFt" secondAttribute="trailing" id="5mj-ci-1O2"/>
-                            <constraint firstItem="1UA-jb-S2d" firstAttribute="top" secondItem="VzC-XV-FFt" secondAttribute="top" id="HDS-fI-seR"/>
-                            <constraint firstItem="1UA-jb-S2d" firstAttribute="leading" secondItem="VzC-XV-FFt" secondAttribute="leading" id="fgE-dD-QFA"/>
+                            <constraint firstItem="5a8-qJ-La8" firstAttribute="top" secondItem="fBq-z5-Zk7" secondAttribute="top" id="1y1-CZ-xN3"/>
+                            <constraint firstItem="5a8-qJ-La8" firstAttribute="trailing" secondItem="IqL-Ea-hTr" secondAttribute="trailing" id="Deq-kR-CDM"/>
+                            <constraint firstAttribute="bottom" secondItem="5a8-qJ-La8" secondAttribute="bottom" id="GYk-2X-HyT"/>
+                            <constraint firstItem="5a8-qJ-La8" firstAttribute="leading" secondItem="IqL-Ea-hTr" secondAttribute="leading" id="YKF-yr-dRS"/>
+                            <constraint firstItem="5a8-qJ-La8" firstAttribute="centerX" secondItem="fBq-z5-Zk7" secondAttribute="centerX" id="ijV-dZ-jNA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="VzC-XV-FFt"/>
+                        <viewLayoutGuide key="safeArea" id="IqL-Ea-hTr"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8M1-H0-AfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IY-Lu-bhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101.44927536231884" y="99.776785714285708"/>
+            <point key="canvasLocation" x="215.94202898550725" y="99.776785714285708"/>
         </scene>
     </scenes>
     <resources>
         <image name="NoPath - Copy" width="375" height="180"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.21600000560283661" green="0.70200002193450928" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
