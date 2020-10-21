@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Islamic CenterVC-->
+        <scene sceneID="0Bd-YP-DLb">
+            <objects>
+                <viewController storyboardIdentifier="IslamicCenterVC" id="uV2-Y2-Ni0" customClass="IslamicCenterVC" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qZt-MF-4BM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-M3-3p1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IslamicCenterTVCell" rowHeight="232" id="HlT-eg-lCA" customClass="IslamicCenterTVCell" customModule="Islamic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="232"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HlT-eg-lCA" id="DXx-nM-sOV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-ve-qG5">
+                                                    <rect key="frame" x="20" y="20" width="374" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="ePI-Q8-2jm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="West London Islamic Center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlI-GX-qz1">
+                                                    <rect key="frame" x="20" y="185" width="374" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Qjl-iv-XTl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England,London City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpc-ey-Ft0">
+                                                    <rect key="frame" x="20" y="210" width="131.5" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="rlH-ME-yJt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="-3.2 km away" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjO-3o-yqr">
+                                                    <rect key="frame" x="156.5" y="210" width="85" height="17.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17.5" id="TCm-6h-JSi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a8m-ve-qG5" firstAttribute="top" secondItem="DXx-nM-sOV" secondAttribute="top" constant="20" id="5Vv-Hl-aRu"/>
+                                                <constraint firstItem="EjO-3o-yqr" firstAttribute="leading" secondItem="rpc-ey-Ft0" secondAttribute="trailing" constant="5" id="7UJ-qr-ZsL"/>
+                                                <constraint firstItem="rpc-ey-Ft0" firstAttribute="top" secondItem="KlI-GX-qz1" secondAttribute="bottom" constant="5" id="E9V-Zw-ldO"/>
+                                                <constraint firstAttribute="trailing" secondItem="KlI-GX-qz1" secondAttribute="trailing" constant="20" id="b4p-lO-6NO"/>
+                                                <constraint firstItem="a8m-ve-qG5" firstAttribute="leading" secondItem="DXx-nM-sOV" secondAttribute="leading" constant="20" id="dEE-P7-UQv"/>
+                                                <constraint firstItem="EjO-3o-yqr" firstAttribute="top" secondItem="KlI-GX-qz1" secondAttribute="bottom" constant="5" id="dvF-Dn-aBS"/>
+                                                <constraint firstItem="KlI-GX-qz1" firstAttribute="top" secondItem="a8m-ve-qG5" secondAttribute="bottom" constant="5" id="mJP-WU-bal"/>
+                                                <constraint firstItem="rpc-ey-Ft0" firstAttribute="leading" secondItem="DXx-nM-sOV" secondAttribute="leading" constant="20" id="mtA-QB-35x"/>
+                                                <constraint firstItem="KlI-GX-qz1" firstAttribute="leading" secondItem="DXx-nM-sOV" secondAttribute="leading" constant="20" id="waf-eP-dsy"/>
+                                                <constraint firstAttribute="trailing" secondItem="a8m-ve-qG5" secondAttribute="trailing" constant="20" id="x2b-hs-1sB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aVC-M3-3p1" firstAttribute="leading" secondItem="MvV-pT-2KM" secondAttribute="leading" id="JaW-Ku-nR4"/>
+                            <constraint firstItem="aVC-M3-3p1" firstAttribute="trailing" secondItem="MvV-pT-2KM" secondAttribute="trailing" id="TkP-sW-q4a"/>
+                            <constraint firstItem="MvV-pT-2KM" firstAttribute="bottom" secondItem="aVC-M3-3p1" secondAttribute="bottom" id="YWB-g3-7Uj"/>
+                            <constraint firstItem="aVC-M3-3p1" firstAttribute="top" secondItem="MvV-pT-2KM" secondAttribute="top" id="fu6-Dp-hVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MvV-pT-2KM"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="aVC-M3-3p1" id="M9L-e5-p2p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vex-Yo-DE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-923.1884057971015" y="-17.410714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoPath" width="333" height="160"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

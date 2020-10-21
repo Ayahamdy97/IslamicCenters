@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Islamic Center InfoTVC-->
+        <scene sceneID="xnT-mK-vB1">
+            <objects>
+                <tableViewController storyboardIdentifier="IslamicCenterInfoTVC" id="QIE-Se-uDb" customClass="IslamicCenterInfoTVC" customModule="Islamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="447-QX-q95">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection id="I4b-oS-BAY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="312" id="oiA-5H-Yej">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="312"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oiA-5H-Yej" id="8Yr-Id-a7f">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-JU-Knd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="170" id="ICk-Td-RS3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West London Islamic Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ro-HV-h0a">
+                                                    <rect key="frame" x="20" y="185" width="267" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="Cu6-wp-sIf"/>
+                                                        <constraint firstAttribute="width" constant="267" id="zqy-CZ-9LV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loc" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-zG-Y8a">
+                                                    <rect key="frame" x="20" y="214" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="mBC-v4-j0q"/>
+                                                        <constraint firstAttribute="height" constant="20" id="vfc-Is-ZhA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-be-313">
+                                                    <rect key="frame" x="20" y="249" width="162" height="41"/>
+                                                    <color key="backgroundColor" name="Green"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="162" id="Flo-dQ-yJV"/>
+                                                        <constraint firstAttribute="height" constant="41" id="v4U-c4-PHJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                    <state key="normal" title="Subscribe now">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England, London City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-76-Dq5">
+                                                    <rect key="frame" x="48" y="215" width="358" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="ul7-f1-KCQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1Ro-HV-h0a" firstAttribute="leading" secondItem="8Yr-Id-a7f" secondAttribute="leading" constant="20" id="2MM-AS-VpN"/>
+                                                <constraint firstItem="Nhk-JU-Knd" firstAttribute="top" secondItem="8Yr-Id-a7f" secondAttribute="top" id="3b8-tK-7xl"/>
+                                                <constraint firstItem="AVl-be-313" firstAttribute="leading" secondItem="8Yr-Id-a7f" secondAttribute="leading" constant="20" id="6kk-ZA-SMk"/>
+                                                <constraint firstItem="Nhk-JU-Knd" firstAttribute="leading" secondItem="8Yr-Id-a7f" secondAttribute="leading" id="78q-P8-cSY"/>
+                                                <constraint firstItem="DRc-76-Dq5" firstAttribute="top" secondItem="1Ro-HV-h0a" secondAttribute="bottom" constant="8" id="8CY-Zz-Gd9"/>
+                                                <constraint firstItem="1Ro-HV-h0a" firstAttribute="top" secondItem="Nhk-JU-Knd" secondAttribute="bottom" constant="15" id="NCP-Mx-1PL"/>
+                                                <constraint firstItem="DRc-76-Dq5" firstAttribute="leading" secondItem="jcc-zG-Y8a" secondAttribute="trailing" constant="8" id="VTT-Nd-0MC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nhk-JU-Knd" secondAttribute="trailing" id="YZo-h0-0Cl"/>
+                                                <constraint firstItem="AVl-be-313" firstAttribute="top" secondItem="jcc-zG-Y8a" secondAttribute="bottom" constant="15" id="ded-EO-Kp8"/>
+                                                <constraint firstAttribute="trailing" secondItem="DRc-76-Dq5" secondAttribute="trailing" constant="8" id="n7o-dz-XaO"/>
+                                                <constraint firstItem="jcc-zG-Y8a" firstAttribute="top" secondItem="1Ro-HV-h0a" secondAttribute="bottom" constant="7" id="rQd-Ft-05H"/>
+                                                <constraint firstItem="jcc-zG-Y8a" firstAttribute="leading" secondItem="8Yr-Id-a7f" secondAttribute="leading" constant="20" id="uLD-Qj-jti"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="113" id="LVa-R3-AUB">
+                                        <rect key="frame" x="0.0" y="340" width="414" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LVa-R3-AUB" id="kA1-9T-USQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2t-1J-Iqx">
+                                                    <rect key="frame" x="20" y="20" width="52" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="p4w-eS-eLk"/>
+                                                        <constraint firstAttribute="height" constant="20" id="yf3-Lb-cq2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="gCi-9q-EeJ">
+                                                    <rect key="frame" x="20" y="42" width="374" height="30.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gCi-9q-EeJ" secondAttribute="trailing" constant="20" id="76r-2U-V4x"/>
+                                                <constraint firstItem="gCi-9q-EeJ" firstAttribute="leading" secondItem="kA1-9T-USQ" secondAttribute="leading" constant="20" id="E1s-z0-rqp"/>
+                                                <constraint firstItem="gCi-9q-EeJ" firstAttribute="top" secondItem="D2t-1J-Iqx" secondAttribute="bottom" constant="2" id="HSu-Bg-3tF"/>
+                                                <constraint firstItem="D2t-1J-Iqx" firstAttribute="leading" secondItem="kA1-9T-USQ" secondAttribute="leading" constant="20" id="nhA-6I-6R3"/>
+                                                <constraint firstItem="D2t-1J-Iqx" firstAttribute="top" secondItem="kA1-9T-USQ" secondAttribute="top" constant="20" id="oDr-JO-ryL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="225" id="fo8-xy-EeI">
+                                        <rect key="frame" x="0.0" y="453" width="414" height="225"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fo8-xy-EeI" id="leu-Gh-EsJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL5-4J-7UA">
+                                                    <rect key="frame" x="20" y="20" width="73" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="LnF-o7-Qv1"/>
+                                                        <constraint firstAttribute="width" constant="73" id="Ob1-m0-kIo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England, London Street 502, Building 23" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxo-yn-rXj">
+                                                    <rect key="frame" x="20" y="50" width="374" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6t6-1G-Tig">
+                                                    <rect key="frame" x="20" y="80.5" width="374" height="114"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="114" id="Y6G-yg-6tV"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lxo-yn-rXj" firstAttribute="top" secondItem="vL5-4J-7UA" secondAttribute="bottom" constant="10" id="AEe-cQ-mgR"/>
+                                                <constraint firstItem="vL5-4J-7UA" firstAttribute="top" secondItem="leu-Gh-EsJ" secondAttribute="top" constant="20" id="CHy-wb-Rzl"/>
+                                                <constraint firstAttribute="trailing" secondItem="lxo-yn-rXj" secondAttribute="trailing" constant="20" id="KsE-1e-YF7"/>
+                                                <constraint firstItem="6t6-1G-Tig" firstAttribute="top" secondItem="lxo-yn-rXj" secondAttribute="bottom" constant="15" id="W8P-Im-cjF"/>
+                                                <constraint firstItem="6t6-1G-Tig" firstAttribute="leading" secondItem="leu-Gh-EsJ" secondAttribute="leading" constant="20" id="dEJ-6c-CRB"/>
+                                                <constraint firstItem="vL5-4J-7UA" firstAttribute="leading" secondItem="leu-Gh-EsJ" secondAttribute="leading" constant="20" id="eI8-zb-76Y"/>
+                                                <constraint firstItem="lxo-yn-rXj" firstAttribute="leading" secondItem="leu-Gh-EsJ" secondAttribute="leading" constant="20" id="sOh-Mo-Chu"/>
+                                                <constraint firstAttribute="trailing" secondItem="6t6-1G-Tig" secondAttribute="trailing" constant="20" id="x7C-AQ-XSz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="159" id="m82-oc-Nn2">
+                                        <rect key="frame" x="0.0" y="678" width="414" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m82-oc-Nn2" id="2KN-cC-6Rm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTJ-mI-WUt">
+                                                    <rect key="frame" x="20" y="20" width="75" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="tjb-ie-Cyf"/>
+                                                        <constraint firstAttribute="height" constant="20" id="yoq-DH-nGU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ehD-8n-8v4">
+                                                    <rect key="frame" x="20" y="46" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="Green"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5y-4d-fBY">
+                                                    <rect key="frame" x="48" y="45" width="110" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" name="Green"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+(531) 159 698 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLJ-Ch-0Ch">
+                                                    <rect key="frame" x="48" y="69" width="140" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27A-mM-faV">
+                                                    <rect key="frame" x="48" y="94" width="60" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" name="Green"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FB/Londoncenter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWt-Rm-XHK">
+                                                    <rect key="frame" x="48" y="114" width="145" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-1z-sot">
+                                                    <rect key="frame" x="20" y="94" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="Green"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZTJ-mI-WUt" firstAttribute="top" secondItem="2KN-cC-6Rm" secondAttribute="top" constant="20" id="Gyl-qk-GaL"/>
+                                                <constraint firstItem="ZTJ-mI-WUt" firstAttribute="leading" secondItem="2KN-cC-6Rm" secondAttribute="leading" constant="20" id="jMQ-qU-qc9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="QIE-Se-uDb" id="UkB-NK-20R"/>
+                            <outlet property="delegate" destination="QIE-Se-uDb" id="NXh-qw-QhG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCQ-G2-Wgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="-287.27678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoPath" width="333" height="160"/>
+        <image name="globe" catalog="system" width="64" height="60"/>
+        <image name="loc" width="15" height="20"/>
+        <image name="phone.fill" catalog="system" width="64" height="56"/>
+        <namedColor name="Gray">
+            <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.21600000560283661" green="0.70200002193450928" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
